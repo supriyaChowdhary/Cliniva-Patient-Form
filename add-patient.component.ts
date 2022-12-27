@@ -44,6 +44,8 @@ export class AddPatientComponent {
       weight:[""],
       bloddpresure:[""],
       heartbeat:[""],
+      cardtype:[""],
+      disease:[""],
       occupation:[""],
       consultant:[""],
       bloodGroup:[""],
