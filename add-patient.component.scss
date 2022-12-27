@@ -1,0 +1,13 @@
+$myWidth: 150px;
+$marginRight:10px;
+$marginLeft:5px;
+$padding:5px 0px 10px 0px;
+
+.input-text {
+    width : $myWidth;
+    margin-right: $marginRight;
+    margin-left: $marginLeft;
+}
+.mat-form-field-appearance-outline .mat-form-field-infix {
+    padding: $padding;
+}
