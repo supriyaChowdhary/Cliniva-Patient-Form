@@ -4,6 +4,7 @@ import {
   UntypedFormGroup,
   Validators,
 } from "@angular/forms";
+import { months } from "moment";
 
 @Component({
   selector: "app-add-patient",
@@ -36,6 +37,13 @@ export class AddPatientComponent {
       relationname:[""],
       relationmobile:[""],
       relationaddress:[""],
+      year:[""],
+      month:[""],
+      days:[""],
+      height:[""],
+      weight:[""],
+      bloddpresure:[""],
+      heartbeat:[""],
       occupation:[""],
       consultant:[""],
       bloodGroup:[""],

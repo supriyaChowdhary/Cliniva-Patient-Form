@@ -103,9 +103,17 @@
                   </mat-form-field>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-1">
-                  <mat-form-field class="example-full-width example-height " appearance="outline">
-                    <mat-label>Age</mat-label>
-                    <input matInput formControlName="age" type="number">
+                  <mat-form-field class="age-width example-height " appearance="outline">
+                    <mat-label>Year</mat-label>
+                    <input matInput formControlName="year" type="number">
+                  </mat-form-field>
+                  <mat-form-field class="age-width example-height" appearance="outline">
+                    <mat-label>Month</mat-label>
+                    <input matInput formControlName="month" type="number">
+                  </mat-form-field>
+                  <mat-form-field class="age-width1 example-height" appearance="outline">
+                    <mat-label>Days</mat-label>
+                    <input matInput formControlName="days" type="number">
                   </mat-form-field>
                 </div>
                 <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-1">
@@ -332,7 +340,7 @@
                 </div>
                 <div class="row">
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-1" style="display: flex;">
-                    <mat-form-field class="example-full-width example-height" appearance="outline">
+                    <mat-form-field class="example-width example-height" appearance="outline">
                       <mat-label>Relation</mat-label>
                       <mat-select formControlName="relation" required>
                         <mat-option [value]="'1'">
@@ -343,13 +351,12 @@
                         </mat-option>
                       </mat-select>
                     </mat-form-field>
-                  </div>
-                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-1">
-                    <mat-form-field class="example-full-width example-height " appearance="outline">
+                    <mat-form-field class="example-width example-height" appearance="outline">
                       <mat-label>Name</mat-label>
                       <input matInput formControlName="relationname">
                     </mat-form-field>
                   </div>
+                 
                   <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-1">
                     <mat-form-field class="example-full-width example-height " appearance="outline">
                       <mat-label>Address</mat-label>
@@ -362,7 +369,38 @@
                       <input matInput formControlName="relationmobile" type="number">
                     </mat-form-field>
                   </div> 
+                  <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-1" style="margin-top:15px;">
+                    <mat-radio-button value="1">Message To Mobile</mat-radio-button>
                   </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-1" style="display: flex;">
+                      <mat-form-field class="example-width example-height" appearance="outline">
+                        <mat-label>Height</mat-label>
+                        <input matInput formControlName="height">
+                      </mat-form-field>
+                      <mat-form-field class="example-width example-height" appearance="outline">
+                        <mat-label>Weight</mat-label>
+                        <input matInput formControlName="weight">
+                      </mat-form-field>
+                    </div>
+                   
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-1">
+                      <mat-form-field class="example-full-width example-height " appearance="outline">
+                        <mat-label>Blood Presure</mat-label>
+                        <textarea matInput formControlName="bloddpresure"></textarea>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-1">
+                      <mat-form-field class="example-full-width example-height " appearance="outline">
+                        <mat-label>Heart Beat</mat-label>
+                        <textarea matInput formControlName="heartbeat"></textarea>
+                      </mat-form-field>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-6 col-sm-6 mb-1">
+                      <button mat-raised-button color="primary">Add</button>
+                    </div>
+                    </div>
               <div class="row">
                 <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 ">
                   <button class="btn-space" [disabled]="!patientForm.valid " mat-raised-button
